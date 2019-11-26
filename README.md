@@ -6,7 +6,7 @@ cd functions
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and deplyment
 ```
 firebase deploy
 ```
