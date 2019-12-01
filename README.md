@@ -2,12 +2,12 @@
 
 ## Project setup
 ```
-cd functions
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### local emulataion
 ```
-firebase deploy
+npm run start
 ```
+
 
