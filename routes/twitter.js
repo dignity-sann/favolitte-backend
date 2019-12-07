@@ -27,11 +27,15 @@ router.get('/api/favolites/list', function(request, response, next) {
 router.get('/api/call', (request, response) => {
   const endpoint = request.query.endpoint
   const param = JSON.parse(request.query.param)
+  console.log('====='.repeat(20))
+  console.log('endpoint = ' + endpoint)
+  console.log('param = ' + request.query.param)
   client.get(endpoint, param, (err, content, res) => {
     if (!err) {
+      console.log(content)
       response.status(200).send(content)
     } else {
-      console.log(res)
+      console.log(err)
       response.status(500).send(err)
     }
   })
