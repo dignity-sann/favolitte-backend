@@ -13,7 +13,7 @@ const client = new Twitter({
 });
 
 /* GET twitter api */
-router.get('/api/tw/favolites/list', function(request, response, next) {
+router.get('/api/favolites/list', function(request, response, next) {
   const params = { screen_name: 'ne_peer' }
   client.get('favorites/list', params, function (error, tweets, res) {
     if (!error) {
